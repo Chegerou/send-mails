@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon dist/server.js",
-    "dev": "nodemon --watch 'app/' --exec \"ts-node app/server.ts\" -e",
+    "dev": "nodemon --watch 'app/' --exec \"ts-node app/server.ts\" -e ts",
     "build": "tsc -p ."
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Chegerou/send-mails#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
     "express": "^4.17.1"
   },
   "devDependencies": {

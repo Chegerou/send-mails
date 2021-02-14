@@ -1,3 +1,3 @@
+import App from './app'
 
-export default class Server {
-}
+new App().server.listen(3000);
