@@ -10,7 +10,7 @@ export default class SendEmailRoutes {
 
   public init = (): Router => {
     const router: Router = Router();
-    router.use('/', router);
+    router.use('/send-mails', router);
     router.post('/:api_key', this.controller.sendMail);
     return router;
   }
